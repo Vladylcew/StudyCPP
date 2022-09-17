@@ -117,7 +117,7 @@ int main(){
         cout << endl;
     }
     for (int i = 0; i < height; i++){
-        cout << setw(3) <<"x"<<i+1<< "=" << setprecision(2) << Matrix[i][width-1] << "   ";
+        cout << setw(3) <<"x"<<i+1<< "=" << setprecision(2) <<(-1)*Matrix[i][width-1] << "   ";
     }
     for (int i = 0; i < height; i++){
         delete[] Matrix[i];
