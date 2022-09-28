@@ -1,8 +1,11 @@
 #include <iostream>
 #include <iomanip>
 #include <cmath>
+#include <cstring>
 
 using namespace std;
+
+bool NoSol = false;
 
 void SwapStrings(double* array1, double* array2, int size){
     for(int j = 0; j < size; j++){
@@ -39,6 +42,7 @@ size_t MaxAbsIndex(double** pdmatrix, int rows, int columnindex)
 
 double** TriangaleMatrix(double** pdmatrix, int rows, int columns)
 {
+
     if(rows + 1 == columns)
     {
         int i = 0, j = 0, k = 0, maxrowindex = 0;
@@ -59,6 +63,7 @@ double** TriangaleMatrix(double** pdmatrix, int rows, int columns)
         }
         delete[] BufferArray;
 
+
         for(i = 0; i < rows; ++i){
             bool zerorow = true;
             for(j = 0; j < columns - 1; j++){
@@ -67,16 +72,21 @@ double** TriangaleMatrix(double** pdmatrix, int rows, int columns)
             }
             if(zerorow && pdmatrix[i][columns - 1] != double(0)){
                 cout <<"The system is incompatible \n";
+                NoSol = true;
                 break;
             }
             else if(zerorow && pdmatrix[i][columns - 1] == double(0)){
                 cout << "The system has an infinite set of solutions \n";
+                NoSol = true;
                 break;
             }
         }
     }
-    else
+    else{
         cout << "Error: rows + 1 != columns \n";
+        NoSol = true;
+    }
+
     return pdmatrix;
 }
 
@@ -116,8 +126,10 @@ int main(){
             cout << setw(5) << setprecision(2) << Matrix[i][j] << "   ";
         cout << endl;
     }
-    for (int i = 0; i < height; i++){
-        cout << setw(3) <<"x"<<i+1<< "=" << setprecision(2) <<(-1)*Matrix[i][width-1] << "   ";
+    if (not NoSol){
+        for (int i = 0; i < height; i++){
+            cout << setw(3) <<"x"<<i+1<< "=" << setprecision(2) << Matrix[i][width-1] << "   ";
+        }
     }
     for (int i = 0; i < height; i++){
         delete[] Matrix[i];
