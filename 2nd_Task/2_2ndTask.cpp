@@ -1,5 +1,5 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -9,16 +9,16 @@ int main(){
     cin>>length;
     cout<<"Enter array: "<<endl;
     vector <int> SuitableName(length);
-    for(int i = 0; i<length;i++){
-        cin>>SuitableName[i];
+    for(int i = 0; i < length;i++){
+        cin >> SuitableName[i];
     };
 
-    for (int j = 2; j < length; j++){
+    for (int j = 1; j < length; j++){
         int key = SuitableName[j];
         int i = j - 1;
         while ( i >= 0 && SuitableName[i] > key){
             swap(SuitableName[i+1],SuitableName[i]);
-        i--;
+            i--;
         };
             SuitableName[i + 1] = key;
     };
