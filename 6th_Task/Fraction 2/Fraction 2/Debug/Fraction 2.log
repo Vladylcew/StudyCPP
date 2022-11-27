@@ -1,0 +1,3 @@
+﻿  Fraction.cpp
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\6th_Task\Fraction 2\Fraction 2\Fraction.cpp(41,27): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  Fraction 2.vcxproj -> C:\Users\mvideo\Desktop\Aboba\StudyCPP\6th_Task\Fraction 2\Debug\Fraction 2.exe
