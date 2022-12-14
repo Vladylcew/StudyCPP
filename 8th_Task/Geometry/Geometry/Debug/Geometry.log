@@ -1,0 +1,15 @@
+﻿  Circle.cpp
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\8th_Task\Geometry\Geometry\Circle.cpp(1,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\8th_Task\Geometry\Geometry\Figures.h(44,21): warning C4018: <: несоответствие типов со знаком и без знака
+  Elipse.cpp
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\8th_Task\Geometry\Geometry\Figures.h(44,21): warning C4018: <: несоответствие типов со знаком и без знака
+  Geometry.cpp
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\8th_Task\Geometry\Geometry\Figures.h(44,21): warning C4018: <: несоответствие типов со знаком и без знака
+  Rectangle.cpp
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\8th_Task\Geometry\Geometry\Figures.h(44,21): warning C4018: <: несоответствие типов со знаком и без знака
+  Square.cpp
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\8th_Task\Geometry\Geometry\Figures.h(44,21): warning C4018: <: несоответствие типов со знаком и без знака
+  Triangle.cpp
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\8th_Task\Geometry\Geometry\Figures.h(44,21): warning C4018: <: несоответствие типов со знаком и без знака
+  Создание кода...
+  Geometry.vcxproj -> C:\Users\mvideo\Desktop\Aboba\StudyCPP\8th_Task\Geometry\Debug\Geometry.exe
