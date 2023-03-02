@@ -15,7 +15,7 @@ int main() {
 	cout << a << "\n" << b<<"\n"<<c<<"\n";
 	
 
-	FIFO<int> A;
+	FIFO<int,vector<int>> A;
 	A.push(1);
 	A.push(5);
 	A.push(4);

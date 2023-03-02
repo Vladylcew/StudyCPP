@@ -1,0 +1,8 @@
+﻿  DinClass.cpp
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\2_1st_Task\DinClass\DinClass\DinClass.cpp(149,20): warning C4244: аргумент: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\2_1st_Task\DinClass\DinClass\DinClass.cpp(151,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\2_1st_Task\DinClass\DinClass\DinClass.cpp(155,20): warning C4244: аргумент: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\2_1st_Task\DinClass\DinClass\DinClass.cpp(157,20): warning C4244: аргумент: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\2_1st_Task\DinClass\DinClass\DinClass.cpp(158,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\2_1st_Task\DinClass\DinClass\DinClass.cpp(161,20): warning C4244: аргумент: преобразование "double" в "size_t", возможна потеря данных
+  DinClass.vcxproj -> C:\Users\mvideo\Desktop\Aboba\StudyCPP\2_1st_Task\DinClass\Debug\DinClass.exe

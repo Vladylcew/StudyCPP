@@ -1,0 +1,5 @@
+﻿  SizeOf.cpp
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\10th_Task\SizeOf\SizeOf\SizeOf.cpp(7,5): warning C4984: "if constexpr" — расширение языка C++17
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\10th_Task\SizeOf\SizeOf\SizeOf.cpp(20,5): warning C4984: "if constexpr" — расширение языка C++17
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\10th_Task\SizeOf\SizeOf\SizeOf.cpp(28,13): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\10th_Task\SizeOf\SizeOf\SizeOf.cpp(37,43): warning C4244: =: преобразование "unsigned __int64" в "int", возможна потеря данных
