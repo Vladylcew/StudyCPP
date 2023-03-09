@@ -1,0 +1,77 @@
+﻿  TupleIters.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(158,47): warning C4244: инициализация: преобразование "_Ty" в "_Ty", возможна потеря данных
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              _Ty=float
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(245): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::_Tuple_val<_This>::_Tuple_val<_Ty>(_Other &&)"
+          with
+          [
+              _This=float,
+              _Ty=double,
+              _Other=double
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(245): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::_Tuple_val<_This>::_Tuple_val<_Ty>(_Other &&)"
+          with
+          [
+              _This=float,
+              _Ty=double,
+              _Other=double
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(245): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::tuple<float>::tuple<std::_Exact_args_t,_Ty,,0>(_Tag,_This2 &&)"
+          with
+          [
+              _Ty=double,
+              _Tag=std::_Exact_args_t,
+              _This2=double
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(245): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::tuple<float>::tuple<std::_Exact_args_t,_Ty,,0>(_Tag,_This2 &&)"
+          with
+          [
+              _Ty=double,
+              _Tag=std::_Exact_args_t,
+              _This2=double
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(245): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::tuple<char,float>::tuple<std::_Exact_args_t,_Ty,double,0>(_Tag,_This2 &&,double &&)"
+          with
+          [
+              _Ty=char,
+              _Tag=std::_Exact_args_t,
+              _This2=char
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(245): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::tuple<char,float>::tuple<std::_Exact_args_t,_Ty,double,0>(_Tag,_This2 &&,double &&)"
+          with
+          [
+              _Ty=char,
+              _Tag=std::_Exact_args_t,
+              _This2=char
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(327): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::tuple<int,char,float>::tuple<std::_Exact_args_t,_Ty,char,double,0>(_Tag,_This2 &&,char &&,double &&)"
+          with
+          [
+              _Ty=int,
+              _Tag=std::_Exact_args_t,
+              _This2=int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple(327): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::tuple<int,char,float>::tuple<std::_Exact_args_t,_Ty,char,double,0>(_Tag,_This2 &&,char &&,double &&)"
+          with
+          [
+              _Ty=int,
+              _Tag=std::_Exact_args_t,
+              _This2=int
+          ]
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\2nd_2nd_Task\TupleIters\TupleIters\TupleIters.cpp(23): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::tuple<int,char,float>::tuple<int,char,double,0>(_This2 &&,char &&,double &&) noexcept"
+          with
+          [
+              _This2=int
+          ]
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\2nd_2nd_Task\TupleIters\TupleIters\TupleIters.cpp(23): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::tuple<int,char,float>::tuple<int,char,double,0>(_This2 &&,char &&,double &&) noexcept"
+          with
+          [
+              _This2=int
+          ]
+  TupleIters.vcxproj -> C:\Users\mvideo\Desktop\Aboba\StudyCPP\2nd_2nd_Task\TupleIters\Debug\TupleIters.exe
