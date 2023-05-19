@@ -1,0 +1,6 @@
+﻿  Asimptotics.cpp
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\2_3rd_Task\Asimptotics\Asimptotics\Asimptotics.cpp(43,9): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\2_3rd_Task\Asimptotics\Asimptotics\Asimptotics.cpp(53,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\2_3rd_Task\Asimptotics\Asimptotics\Asimptotics.cpp(61,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\2_3rd_Task\Asimptotics\Asimptotics\Asimptotics.cpp(68,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mvideo\Desktop\Aboba\StudyCPP\2_3rd_Task\Asimptotics\Asimptotics\Asimptotics.cpp(69): error C4700: использована неинициализированная локальная переменная "arr"

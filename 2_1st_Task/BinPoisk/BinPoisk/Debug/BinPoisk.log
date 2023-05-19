@@ -1,6 +1,0 @@
-﻿  BinPoisk.cpp
-C:\Users\mvideo\Desktop\Aboba\StudyCPP\2_1st_Task\BinPoisk\BinPoisk\BinPoisk.cpp(36,5): warning C4984: "if constexpr" — расширение языка C++17
-C:\Users\mvideo\Desktop\Aboba\StudyCPP\2_1st_Task\BinPoisk\BinPoisk\BinPoisk.cpp(59,10): warning C4984: "if constexpr" — расширение языка C++17
-C:\Users\mvideo\Desktop\Aboba\StudyCPP\2_1st_Task\BinPoisk\BinPoisk\BinPoisk.cpp(139): warning C4715: BinSearch<std::_List_iterator<std::_List_val<std::_List_simple_types<int> > >,std::list<int,std::allocator<int> > >: значение возвращается не при всех путях выполнения
-C:\Users\mvideo\Desktop\Aboba\StudyCPP\2_1st_Task\BinPoisk\BinPoisk\BinPoisk.cpp(139): warning C4715: BinSearch<std::_Flist_iterator<std::_Flist_val<std::_Flist_simple_types<int> > >,std::forward_list<int,std::allocator<int> > >: значение возвращается не при всех путях выполнения
-  BinPoisk.vcxproj -> C:\Users\mvideo\Desktop\Aboba\StudyCPP\2_1st_Task\BinPoisk\Debug\BinPoisk.exe
