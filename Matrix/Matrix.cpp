@@ -28,7 +28,7 @@ class Matrix {
 
     Matrix()
     {
-        Alloc()(HeightCap, WidthCap);
+        a = Alloc()(HeightCap, WidthCap);
         for (size_t i = 0; i < HeightCap; ++i) {
             for (size_t j = 0; j < WidthCap; ++j) {
                 a[i][j] = 0;
@@ -38,7 +38,7 @@ class Matrix {
 
     Matrix<T, HeightCap, WidthCap, Alloc>(const Matrix<T, HeightCap, WidthCap, Alloc>& tmp)
     {
-        Alloc()(HeightCap, WidthCap);
+        a = Alloc()(HeightCap, WidthCap);
         for (int i = 0; i < HeightCap; ++i) {
             for (int j = 0; j < WidthCap; ++j) {
                 a[i][j] = move(tmp.a[i][j]);
@@ -85,7 +85,7 @@ class Matrix {
             return *this;
         }
 
-        Alloc()(HeightCap, WidthCap);
+        a = Alloc()(HeightCap, WidthCap);
 
         for (int i = 0; i < HeightCap; ++i) {
             for (int j = 0; j < WidthCap; ++j) {
