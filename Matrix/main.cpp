@@ -4,10 +4,10 @@
 using namespace std;
 
 
-template<typename T, size_t HeightCap, size_t WidthCap>
-Matrix<T,WidthCap, HeightCap> Transpose(Matrix<T, HeightCap, WidthCap>&& tmp)
+template<typename T, size_t HeightCap, size_t WidthCap, class Alloc = MyAll<T>>
+Matrix<T, WidthCap, HeightCap, Alloc> Transpose(Matrix<T, HeightCap, WidthCap, Alloc>&& tmp)
 {
-    Matrix<T, WidthCap, HeightCap> result;
+    Matrix<T, WidthCap, HeightCap, Alloc> result;
     for (int i = 0; i < HeightCap; ++i) {
         for (int j = 0; j < WidthCap; ++j) {
             result.a[j][i] = tmp.a[i][j];

@@ -4,16 +4,31 @@
 #include <iomanip>
 using namespace std;
 
+template <typename T>
+class MyAll {
+    public:
+    T** operator()(size_t H, size_t W)
+    {
+        T** b;
+        b = new T * [H];
+        for (size_t i = 0; i < H; ++i) {
+            b[i] = new T[W];
+        }
+        return b;
+    }
 
-template< typename T, size_t HeightCap, size_t WidthCap>
+
+};
+
+
+template< typename T, size_t HeightCap, size_t WidthCap, class Alloc = MyAll<T>>
 class Matrix {
     public:
-
-        T **a;
+        T** a;
 
     Matrix()
     {
-        Resize(HeightCap,WidthCap);
+        Alloc()(HeightCap, WidthCap);
         for (size_t i = 0; i < HeightCap; ++i) {
             for (size_t j = 0; j < WidthCap; ++j) {
                 a[i][j] = 0;
@@ -21,9 +36,9 @@ class Matrix {
         }
     }
 
-    Matrix<T, HeightCap, WidthCap>(const Matrix<T, HeightCap, WidthCap>& tmp)
+    Matrix<T, HeightCap, WidthCap, Alloc>(const Matrix<T, HeightCap, WidthCap, Alloc>& tmp)
     {
-        Resize(HeightCap, WidthCap);
+        Alloc()(HeightCap, WidthCap);
         for (int i = 0; i < HeightCap; ++i) {
             for (int j = 0; j < WidthCap; ++j) {
                 a[i][j] = move(tmp.a[i][j]);
@@ -40,9 +55,15 @@ class Matrix {
         }
 
 
+
+
+
     T* operator[](size_t x) {
         return a[x];
     }
+
+
+
 
     void print()
     {
@@ -58,13 +79,13 @@ class Matrix {
     
 
 
-    Matrix<T, HeightCap, WidthCap>& operator=(const Matrix<T, HeightCap, WidthCap>& tmp)
+    Matrix<T, HeightCap, WidthCap, Alloc>& operator=(const Matrix<T, HeightCap, WidthCap, Alloc>& tmp)
     {
         if (this == &tmp) {
             return *this;
         }
 
-        Resize(HeightCap, WidthCap);
+        Alloc()(HeightCap, WidthCap);
 
         for (int i = 0; i < HeightCap; ++i) {
             for (int j = 0; j < WidthCap; ++j) {
@@ -74,7 +95,7 @@ class Matrix {
         return *this;
     }
 
-    Matrix<T, HeightCap, WidthCap> operator+(const Matrix<T, HeightCap, WidthCap>& tmp)
+    Matrix<T, HeightCap, WidthCap, Alloc> operator+(const Matrix<T, HeightCap, WidthCap, Alloc>& tmp)
     {
         Matrix<T, HeightCap, WidthCap> result;
         for (int i = 0; i < HeightCap; ++i) {
@@ -85,7 +106,7 @@ class Matrix {
         return result;
     }
 
-    Matrix<T, HeightCap, WidthCap> operator-(const Matrix<T, HeightCap, WidthCap>& tmp)
+    Matrix<T, HeightCap, WidthCap, Alloc> operator-(const Matrix<T, HeightCap, WidthCap, Alloc>& tmp)
     {
         Matrix<T, HeightCap, WidthCap> result;
         for (int i = 0; i < HeightCap; ++i) {
@@ -95,10 +116,14 @@ class Matrix {
         }
         return result;
     }
+
+
+
+
     template<size_t WidthCapN>
-    Matrix<T, HeightCap, WidthCap> operator*(const Matrix<T, WidthCap, WidthCapN>& m)
+    Matrix<T, HeightCap, WidthCap, Alloc> operator*(const Matrix<T, WidthCap, WidthCapN, Alloc>& m)
     {
-        Matrix<T, HeightCap, WidthCapN> result;
+        Matrix<T, HeightCap, WidthCapN, Alloc> result;
         for (int i = 0; i < HeightCap; ++i) {
             for (int j = 0; j < WidthCapN; ++j) {
                 for (int k = 0; k < WidthCapN; ++k) {
@@ -107,15 +132,6 @@ class Matrix {
             }
         }
         return result;
-    }
-
-
-    void Resize(size_t H,size_t W)
-    {
-        a = new T*[H];
-        for (size_t i = 0; i < H; ++i) {
-            a[i] = new T[W];
-        }
     }
 };
 
